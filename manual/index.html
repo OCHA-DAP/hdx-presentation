@@ -105,8 +105,8 @@
             <section data-background="#2c3e50">
                 <h2>Our short history</h2>
                 <p class="fragment" data-fragment-index="1">HDX was launched at the Open Knowledge Festival in Berlin.</p>
-                <p class="fragment" data-fragment-index="2">Over <span id="cumulative_users"><strong>145,000</strong></span> users visiting HDX since July 2014</p>
-                <p class="fragment" data-fragment-index="3">About <strong><span id="registered_users"></span></strong> registered users</p>
+                <p class="fragment" data-fragment-index="2">Over <span id="cumulative_users"><strong>176,000</strong></span> users visiting HDX since July 2014</p>
+                <p class="fragment" data-fragment-index="3">About <span id="registered_users"><strong></strong></span> registered users</p>
                 <p class="fragment" data-fragment-index="4">Approximately <strong><span id="number_of_users"></span></strong> users  per week visiting the site</p>
                 <p class="fragment" data-fragment-index="5">Almost <strong>one every four</strong> (<span id="daily_downloads"></span>) visitors downloads a dataset</p>
                 <p class="fragment" data-fragment-index="6"><strong><span id="registered_organizations"></span></strong> organizations</p>
@@ -155,9 +155,6 @@
                 <h2>Organization Pages</h2>
             </section>
 
-            <section data-background-iframe="http://data.hdx.rwlabs.org/organization/wfp">
-            </section>
-
             <section data-background-iframe="http://data.hdx.rwlabs.org/organization/ocha-afghanistan">
             </section>
 
@@ -177,21 +174,10 @@
             </section>
 
             <section data-background="#2c3e50">
-                <h2>How can you support HDX?</h2>
+                <h2>World Food Programme</h2>
             </section>
 
-            <section data-background="#2c3e50">
-                <p class="fragment" data-fragment-index="1"><strong>Share Data: </strong><a href="https://data.hdx.rwlabs.org">https://data.hdx.rwlabs.org</a></p>
-                <p class="fragment" data-fragment-index="2"><strong>Volunteer: </strong><a href="mailto:hdx@un.org">hdx@un.org</a></p>
-                <p class="fragment" data-fragment-index="3"><strong>Join the Conversation: </strong><a href="http://twitter.com/humdata">@humdata</a></p>
-            </section>
-
-            <section data-background="#2c3e50">
-                <div style="text-align: center;">
-                    <h2>Thank you</h2>
-                    <h4><a href="http://twitter.com/humdata">@humdata</a></h4>
-                    <h4><a href="http://data.hdx.rwlabs.org">hdx.rwlabs.org</a></h4>
-                </div>
+            <section data-background-iframe="http://data.hdx.rwlabs.org/organization/wfp">
             </section>
 
         </div>
@@ -215,7 +201,6 @@
         help: false,
         transitionSpeed: 'slow',
         slideNumber: true,
-        // autoSlide: 10000,
         loop: true,
 
         transition: 'slide', // none/fade/slide/convex/concave/zoom
@@ -275,15 +260,11 @@
     -->
     <script>
         HDXStatistics.metrics()
-        // HDXStatistics.cumulative('ga-users', 'cumulative_users', -2) // issue with total numbers.
         HDXStatistics.latest('ckan-number-of-users', 'registered_users', -2)
         HDXStatistics.latest('ga-users', 'number_of_users', -2)
         HDXStatistics.share('calc-conversion-download', 'daily_downloads', 2)
         HDXStatistics.latest('ckan-number-of-orgs', 'registered_organizations', -1)
-
-        // HDXStatistics.latest('ckan-number-of-datasets', 'number_datasets', -2)
-        // HDXStatistics.latest('calc-conversion-download', 'download_rate', 1)
-        // HDXStatistics.latest('calc-ckan-new-users', 'new_registered_users', -1)
+        // HDXStatistics.cumulative('ga-users', 'cumulative_users', -2)
     </script>
 
 </body>
